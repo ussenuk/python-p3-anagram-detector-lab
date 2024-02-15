@@ -11,19 +11,19 @@
 
 # second solution
 
-# class Anagram:
-#     def __init__(self, aword=""):
-#         self.current_word = sorted(aword)
+class Anagram:
+    def __init__(self, aword=""):
+        self.current_word = sorted(aword)
 
-#     def match(self, word_list):
-#         result = []
-#         for word in word_list:
-#             if sorted(word) == self.current_word:
-#                 result.append(word)
-#         return result
+    def match(self, word_list):
+        result = []
+        for word in word_list:
+            if sorted(word) == self.current_word:
+                result.append(word)
+        return result
 
-# listen = Anagram("enlist")
-# print(listen.match(['hello', 'hipopotamus']))
+listen = Anagram("enlist")
+print(listen.match(['hello', 'hipopotamus']))
 
 # Third solution: this code was trying to follow the instruction from the content and ended up reinventing the whell
 # Yet sorted() works on string also not only on list
